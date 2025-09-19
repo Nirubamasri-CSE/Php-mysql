@@ -95,8 +95,9 @@ $sqlSub = "SELECT s.name, c.course_name, e.grade
                   WHEN 'C' THEN 2
                   WHEN 'D' THEN 1
                   ELSE 0 END
-              ) FROM Enrollments WHERE course_id = e.course_id)";
-
+              ) FROM Enrollments WHERE course_id = e.course_id)
+           ORDER BY e.grade ASC";
+           
 $resultSub = $conn->query($sqlSub);
 
 echo "<h2>Students Scoring Above Average in Their Course</h2>";
