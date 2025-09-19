@@ -8,7 +8,7 @@ $host = '127.0.0.1';
 $user = 'root';
 $pass = '';
 $db   = 'schooldb';
-$port = 3307; // your MySQL port
+$port = 3307; // <-- your MySQL port
 
 $conn = new mysqli($host, $user, $pass, $db, $port);
 
